@@ -1,3 +1,5 @@
+using zad5.dal;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -18,6 +20,9 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Person}/{action=Index}/{id?}");
+
+
+CosmosDbServiceProvider.Init().GetAwaiter().GetResult();
 
 app.Run();

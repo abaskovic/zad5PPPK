@@ -4,10 +4,10 @@ namespace zad5.dal
 {
     public static class CosmosDbServiceProvider
     {
-        private const string DatabaseName = "Items";
-        private const string ContainerName = "Todo";
-        private const string Account = "https://dbeletodoitems.documents.azure.com:443/";
-        private const string Key = "Ub4C7aePad3cq03fuL15Lp7WmuKhPzvSecm8soU33900U4vs2o4Q3cxuLtQJxrnfEwezkS4d97g3ACDbiRhzQw==";
+        private const string DatabaseName = "Persons";
+        private const string ContainerName = "Tasks";
+        private const string Account = "https://pppkpersonab.documents.azure.com:443/";
+        private const string Key = "EyP7lbyIRj9w6Kh23LRdwfz3PUkNuwMHR2X3l4iqdjsvPlJJMnLRF45u3n1oF73LF9oy8j9RXuRJACDb5JbeMA==";
 
         private static ICosmosDbService? service;
 

@@ -8,10 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.37.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
   </ItemGroup>
 
 </Project>

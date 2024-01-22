@@ -3,10 +3,14 @@ using System.ComponentModel.DataAnnotations;
 
 namespace zad5.Models
 {
-    public class Item
+    public class Job
     {
         [JsonProperty(PropertyName ="id")]
         public string? Id { get; set; }
+
+
+        [JsonProperty(PropertyName = "type")]
+        public string? Type { get; set; }
 
         [Required]
         [JsonProperty(PropertyName = "name")]
@@ -15,9 +19,12 @@ namespace zad5.Models
         [Required]
         [JsonProperty(PropertyName = "description")]
         public string? Description { get; set; } 
-        
-        [JsonProperty(PropertyName = "completed")]
-        public string? Completed { get; set; }
+
+        [JsonProperty(PropertyName = "personId")]
+        public string? PersonId { get; set; }
+
+        [JsonProperty(PropertyName = "personFullName")]
+            public string? PersonFullName { get; set; }
 
     }
 }
